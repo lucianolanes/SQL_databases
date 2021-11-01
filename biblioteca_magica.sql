@@ -10,7 +10,7 @@ CREATE TABLE autores(
     PRIMARY KEY (id)
 ) engine = InnoDB;
 
-CREATE TABLE `seção`(
+CREATE TABLE `secao`(
     id INT AUTO_INCREMENT,
     titulo VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
@@ -21,10 +21,10 @@ CREATE TABLE `livro`(
     `titulo` VARCHAR(200) NOT NULL,
     autor_id INT,
 	estoque INT,
-    `seção_id` INT,
+    `secao_id` INT,
     PRIMARY KEY (id),
     FOREIGN KEY (autor_id) REFERENCES autores(id),
-    FOREIGN KEY (`seção_id`) REFERENCES `seção`(id)
+    FOREIGN KEY (`secao_id`) REFERENCES `secao`(id)
 ) engine = InnoDB;
 
 INSERT INTO autores (nome)
@@ -35,7 +35,7 @@ VALUES
   ('Agatha Harkness'),
   ('Rei Gelado');
 
-INSERT INTO `seção` (titulo)
+INSERT INTO `secao` (titulo)
 VALUES
   ('Proteção e Defesa'),
   ('Elemental'),
@@ -43,7 +43,7 @@ VALUES
   ('Arte das Trevas'),
   ('Necromancia');
 
-INSERT INTO `livro` (`titulo`, autor_id, estoque, `seção_id`)
+INSERT INTO `livro` (`titulo`, autor_id, estoque, `secao_id`)
 VALUES
   ('Como dominar a magia elemental', 2, 100, 2),
   ('Defesa contra arte das trevas', 1, 150, 1),

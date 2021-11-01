@@ -68,7 +68,7 @@ VALUES
   ('Espada Longa'),
   ('Lança'),
   ('Varinha'),
-  ('Chicote	'),
+  ('Chicote'),
   ('Orbe');
   
   INSERT INTO herois (nome, `força`, agilidade, magia, classe_id, `em missão`)
