@@ -1,4 +1,4 @@
-# MYSQL databases
+# MySQL Databases
 Bancos de dados relacionais criados para o processo seletivo de summer student na Trybe.
 
 O objetivo do desafio era realizar um dia de conteúdo sobre SQL Joins com explicação, exemplos, exercícios e gabaritos.
